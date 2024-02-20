@@ -19,8 +19,9 @@ from peft import (
 )
 from transformers import LlamaForCausalLM, LlamaTokenizer
 
+import sys
+sys.path.append('../')
 from alpaca.utils.prompter import Prompter
-
 
 def train(
     # model/data params
